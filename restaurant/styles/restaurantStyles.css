@@ -1,0 +1,44 @@
+header {
+    background-color: crimson;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#navigation {
+    background-color:orange
+}
+
+#content {
+    background-color: cyan
+}
+footer {
+    background-color: blue;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color:blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bold
+}
+

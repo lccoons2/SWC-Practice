@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript" src="LuckySevens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+    <style>
+       form, table, h1 {
+            width: 400px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 style="text-align: center;">Lucky Sevens</h1>
+    <form name="luckySeven" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="startingBet">Starting Bet</label>
+                <input type="number" class="form-control" id="startingBet">
+            </div><br />         
+            <div>
+                <button type="submit" id="playButton" class="btn btn-default" style="display: block; margin: 0 auto;">Play</button>
+            </div>
+            <!--<button type="reset" id="resetButton" class="btn">Reset</button>-->
+    </form>
+    <table id="results" class="table table-striped" style="display:none;">
+        <thead>
+            <tr>
+                <th style="text-align: center;">Results</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Bet</td>
+                <td>$<span id="initialBet"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="totalRolls"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td>$<span id="highestAmount"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won</td>
+                <td><span id="highestRollCount"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
