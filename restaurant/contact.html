@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--
+    Name: Cole Coons
+    Date Created: 4/30/2019 
+    Most recent revision: 4/30/2019
+-->
+<!-- 
+To Do: 
+scale picture to grid
+-->
+
+<html lang="en" style="text-align:center"> 
+<head>
+<title>Contact Us</title>  
+<link rel="stylesheet" href="styles/restaurantStyles.css" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script rel="scripts/contact.js"></script>
+<style>
+    form {
+            width: 100%;
+            margin-left: auto;
+            margin right: auto;
+            display: inline-block;
+    }
+    #required {
+        font-weight: bold;
+    }    
+    form {
+        width: 400px;
+        margin: 0 auto;
+    }
+     /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 4em;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .jumbotron h1 {
+        font-size: 6em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .jumbotron h1 {
+        font-size: 8em;
+    }
+}
+    nav .btn {
+        background-color: aqua;
+    }
+</style>    
+
+</head>
+
+<body>
+    
+<noscript>
+    <div class="noscriptmsg">
+    You don't have javascript enabled, and this website would be minutely more enjoyable with javascript enabled!
+    </div>
+</noscript>  
+    
+    <header>
+        <h1>Lindsay C's</h1>
+    </header>
+
+<nav id="navigation">
+
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+        <a href="index.html" target="_blank" class="btn"><!--<span class="glyphicon glyphicon-house"></span> It seems glyphicons are no longer supported by Bootstrap 4 (even though the website claims that they are)-->Home</a>
+        </div>
+        <div class="col-sm-4">
+        <a href="menu.html" target="_blank" class="btn">Menu</a>
+        </div>
+        <div class="col-sm-4">
+        <a href="contact.html" target="_blank" class="btn">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<hr />
+</nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/seasonalBeach.jpg" alt="Enjoy summer while you can!" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New Seasonal Menu!</h3>
+          <p>Seasonal Summer Menu now available! Grab your favorites before they're gone!</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/seasonalDrink.jpg" alt="SG Brew, available now for a limited time!" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>SG Brew is back for a limited time!</h3>
+          <p>Brave the scorching summer heat with our SG Brew, available now!</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/cityLocation.jpg" alt="Congratulation to Zanarkand, our newest location!" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>New location opening in Zanarkand!</h3>
+          <p>We thank Zanarkand for welcoming our family into their community and look forward to a long future with them!</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>
+    <div class="col-sm-6">
+        <div class="jumbotron">
+            <h2>New location coming soon!</h2>
+        </div>
+        </div>
+    </div>
+</div><nav id="content">
+<div class="container">
+        <h1>Contact Us</h1>
+   <div class="form-group">
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label for="formControlInputName">Name:</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="text" class="form-control" id="formControlInputName" placeholder="Firstname Lastname">
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label for="formControlInputEmail">Email:</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="email" class="form-control" id="formControlInputEmail" placeholder="name@example.com">
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label for="formControlInputPhone">Phone:</label>
+        </div>
+        <div class="col-sm-4">
+            <input type="tel" class="form-control" pattern=".{10}" id="formControlInputPhone" placeholder="123-456-7890" oninput="checkPhone()" required>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label for="formControlInput4">Reason for Inquiry:</label>
+        </div>
+        <div class="col-sm-4">
+            <select class="form-control" id="formControlInputReason">
+                <option value="default" selected>Catering (default)</option>
+                <option value="morning">Private Party</option>
+                <option value="afternoon">Feedback</option>
+                <option value="night">Other</option>
+            </select>
+        </div>
+       </div>
+        <div class="col-sm-2">
+
+        </div>
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label for="FormControlAddInfo">Additional Information:</label>
+        </div>
+        <div class="col-sm-4">
+            <textarea class="form-control" id="formControlAddInfo" rows="3"></textarea>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    </div>
+    <div class="form-check">
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label class="form-check-label" for="formControlInputRecently">Have you been to the restaurant?</label>
+        </div>
+        <div class="col-sm-4">
+            <input class="form-check-input" type="radio" name="radioNo" value="no" checked/>No<input class="form-check-input" type="radio" name="radioYes" value="yes"/>Yes<br />
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    <div class="row form-check form-check-inline">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-4">
+            <label class="form-check-label" for="checkbox">Best days to contact you:</label>
+        </div>
+        <div class="col-sm-4">
+            <input class="form-check-input" type="checkbox" id="myDays" value="monday">M
+            <input class="form-check-input" type="checkbox" id="myDays" value="tuesday">T
+            <input class="form-check-input" type="checkbox" id="myDays" value="wednesday">W
+            <input class="form-check-input" type="checkbox" id="myDays" value="thursday">Th
+            <input class="form-check-input" type="checkbox" id="myDays" value="friday">F<br />
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+
+        </div>
+        <div class="col-sm-4">
+            <input colspan="3" type="submit" value="Send Request" >
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+    </div>
+</div>
+<div class="form">
+<form>
+       <table style="margin:0 auto">
+        <tr>
+         <td id="question"></td> <td></td><td></td><br>
+        </tr>
+        <tr>
+         <td id="question"></td> <td></td><br>
+        </tr>
+        <tr>
+         <td id="question"></td> <td></td><br>
+        </tr>
+        <tr>
+         <td id="question"></td> <td></td><br>
+        </tr>
+
+       </table>
+</form>
+</div>
+</nav>
+</body>
+    
+<hr />
+<footer>
+
+    
+<nav>
+    <p>
+        123 Hilly Plain Avenue, Chicago, IL, 60007    
+    </p>
+    
+    <p>
+        1-800-668-7325 / 1-800-NOT-REAL
+    </p>
+</nav>   
+
+</footer>    
+    
+</html
