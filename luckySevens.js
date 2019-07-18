@@ -1,4 +1,4 @@
-function clearErrors() {    
+function clearErrors() {
     for (var loopCounter = 0; 
         loopCounter < document.forms["luckySeven"].elements.length; 
         loopCounter++) {
@@ -23,7 +23,7 @@ function validateItems() {
     clearErrors();
     var startingBet = document.forms["luckySeven"]["startingBet"].value;
     
-    if ((startingBet == "" || isNaN(startingBet)) || (startingBet < 0)) {
+    if ((startingBet == "" || isNaN(startingBet)) || (startingBet <= 0)) {
         alert("startingBet must be filled in with a positive number.");
         document.forms["luckySeven"]["startingBet"]
            .parentElement.className = "form-group has-error";
@@ -31,7 +31,7 @@ function validateItems() {
         return false;
     }
     //paste all the stuff here below:
-var gameMoney = startingBet;
+var gameMoney = parseInt(startingBet);
 var firstRoll = 0
 var secondRoll = 0
 var diceSum = 0
